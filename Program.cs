@@ -1,18 +1,25 @@
 ﻿Console.Clear();
-Console.WriteLine("Введите кол-во элементов: ");
-string[] s = new string[10];
-int n = int.Parse(Console.ReadLine());;
+Console.Write("Введите кол-во элементов: ");
+string[] s = new string[20];
+int n = int.Parse(Console.ReadLine()); ;
 
 
-
-
-for (int i = 0; i < n; i++)
+void PrintStringArray(int n)
 {
-    s[i] = Console.ReadLine();
+    for (int i = 0; i < n; i++)
+    {
+        s[i] = Console.ReadLine();
+    }
+    for (int i = 0; i < n; i++)
+    {
+        if (i == 0) Console.Write("[");
+        if (i < n - 1) Console.Write(s[i] + ",");
+        else Console.WriteLine(s[i] + "]");
+    }
+
 }
-for (int i = 0; i < n; i++)
-{
-    Console.Write(s[i] + ",");
-}
+
+PrintStringArray(n);
+
 
 
