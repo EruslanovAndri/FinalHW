@@ -3,7 +3,6 @@ int italon = 3;
 Console.Write("Введите кол-во элементов: ");
 int n = int.Parse(Console.ReadLine());
 Console.WriteLine($"Напишите {n} слов/слова, которые вы желаете увидеть на экране: ");
-
 string[] arrayOne = new string[n];
 
 
